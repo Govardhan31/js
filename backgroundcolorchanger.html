@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Background Color </title>
+       
+
+    </head>
+    <body>
+        <center><h1>Change Background color </h1></center>
+       <center> <input type="text"  id="colorinputtext"><br><br>
+         <input type="color" id="color1"><br><br>
+        <input type="button" id="colorbutton" value="change color with text" onclick="changecolor() ">
+        <input type="button" id="colorbutton" value="change color " onclick="changecolor1() ">
+        
+        
+       </center>
+        <script>
+            function changecolor(){
+                let color=document.getElementById("colorinputtext").value;
+                document.body.style.backgroundColor =color;
+
+               
+            }
+            function changecolor1(){
+                let color11=document.getElementById("color1").value;
+                document.body.style.backgroundColor =color11;
+            }
+        </script>
+    </body>
+</html>
